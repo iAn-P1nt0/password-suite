@@ -1,5 +1,5 @@
 {
-  "name": "@trustvault/password-utils",
+  "name": "@ian-p1nt0/password-utils",
   "version": "1.0.0",
   "description": "Cryptographically secure password and passphrase generation utilities with strength analysis",
   "type": "module",
@@ -44,7 +44,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/indi-gamification-initiative/TrustVault-password-utils.git"
+    "url": "git+https://github.com/indi-gamification-initiative/TrustVault-password-utils.git"
   },
   "bugs": {
     "url": "https://github.com/indi-gamification-initiative/TrustVault-password-utils/issues"
