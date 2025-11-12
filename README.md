@@ -1,7 +1,7 @@
 # @trustvault/password-utils
 
 [![npm version](https://img.shields.io/npm/v/@trustvault/password-utils.svg)](https://www.npmjs.com/package/@trustvault/password-utils)
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/indi-gamification-initiative/TrustVault-password-utils/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/TrustVault-password-utils/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 
 Cryptographically secure password and passphrase generation utilities with comprehensive strength analysis. Built with TypeScript and leveraging the Web Crypto API for maximum security.
@@ -395,7 +395,7 @@ Contributions are welcome! Please follow these guidelines:
 4. **Documentation** - Update README and JSDoc comments
 5. **No Breaking Changes** - Follow semantic versioning
 
-See [AGENTS.md](https://github.com/indi-gamification-initiative/TrustVault-password-utils/blob/main/AGENTS.md) for detailed development guidelines.
+See [AGENTS.md](https://github.com/iAn-P1nt0/TrustVault-password-utils/blob/main/AGENTS.md) for detailed development guidelines.
 
 ## License
 
@@ -409,8 +409,8 @@ Apache License 2.0 - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- **Issues:** [GitHub Issues](https://github.com/indi-gamification-initiative/TrustVault-password-utils/issues)
-- **Repository:** [GitHub](https://github.com/indi-gamification-initiative/TrustVault-password-utils)
+- **Issues:** [GitHub Issues](https://github.com/iAn-P1nt0/TrustVault-password-utils/issues)
+- **Repository:** [GitHub](https://github.com/iAn-P1nt0/TrustVault-password-utils)
 - **NPM:** [@trustvault/password-utils](https://www.npmjs.com/package/@trustvault/password-utils)
 
 ---

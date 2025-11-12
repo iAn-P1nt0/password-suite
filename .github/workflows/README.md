@@ -109,8 +109,8 @@ No setup required. CodeQL automatically:
 Add these to your README.md:
 
 ```markdown
-[![CI](https://github.com/indi-gamification-initiative/TrustVault-password-utils/workflows/CI/badge.svg)](https://github.com/indi-gamification-initiative/TrustVault-password-utils/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/indi-gamification-initiative/TrustVault-password-utils/workflows/CodeQL/badge.svg)](https://github.com/indi-gamification-initiative/TrustVault-password-utils/actions/workflows/codeql.yml)
+[![CI](https://github.com/iAn-P1nt0/TrustVault-password-utils/workflows/CI/badge.svg)](https://github.com/iAn-P1nt0/TrustVault-password-utils/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/iAn-P1nt0/TrustVault-password-utils/workflows/CodeQL/badge.svg)](https://github.com/iAn-P1nt0/TrustVault-password-utils/actions/workflows/codeql.yml)
 [![npm version](https://img.shields.io/npm/v/@trustvault/password-utils.svg)](https://www.npmjs.com/package/@trustvault/password-utils)
 ```
 

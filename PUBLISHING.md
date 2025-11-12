@@ -339,7 +339,7 @@ Use your GitHub username and personal access token.
   "name": "@trustvault/password-utils",
   "repository": {
     "type": "git",
-    "url": "https://github.com/indi-gamification-initiative/TrustVault-password-utils.git"
+    "url": "https://github.com/iAn-P1nt0/TrustVault-password-utils.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -423,7 +423,7 @@ For publishing issues:
 - GitHub Package Registry: https://docs.github.com/en/packages
 
 For package-specific issues:
-- GitHub Issues: https://github.com/indi-gamification-initiative/TrustVault-password-utils/issues
+- GitHub Issues: https://github.com/iAn-P1nt0/TrustVault-password-utils/issues
 
 ---
 

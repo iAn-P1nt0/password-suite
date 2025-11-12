@@ -67,4 +67,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[1.0.0]: https://github.com/indi-gamification-initiative/TrustVault-password-utils/releases/tag/v1.0.0
+[1.0.0]: https://github.com/iAn-P1nt0/TrustVault-password-utils/releases/tag/v1.0.0

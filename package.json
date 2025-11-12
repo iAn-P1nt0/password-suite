@@ -44,12 +44,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/indi-gamification-initiative/TrustVault-password-utils.git"
+    "url": "git+https://github.com/iAn-P1nt0/TrustVault-password-utils.git"
   },
   "bugs": {
-    "url": "https://github.com/indi-gamification-initiative/TrustVault-password-utils/issues"
+    "url": "https://github.com/iAn-P1nt0/TrustVault-password-utils/issues"
   },
-  "homepage": "https://github.com/indi-gamification-initiative/TrustVault-password-utils#readme",
+  "homepage": "https://github.com/iAn-P1nt0/TrustVault-password-utils#readme",
   "dependencies": {
     "@noble/hashes": "^1.5.0",
     "zxcvbn": "^4.4.2"
