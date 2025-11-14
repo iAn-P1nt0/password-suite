@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TrustVault Password Utils - Cryptographically secure password and passphrase generation utilities with comprehensive strength analysis">
+    <meta name="author" content="iAn-P1nt0">
+    <meta name="keywords" content="password generator, security, cryptography, passphrase, open source">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="TrustVault Password Utils">
+    <meta property="og:description" content="Cryptographically secure password and passphrase generation utilities">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ian-p1nt0.github.io/TrustVault-password-utils/">
+    
+    <title>TrustVault Password Utils | Cryptographically Secure Password Generation</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🔐</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="nav-logo">🔐</span>
+                <span class="nav-title">TrustVault</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#sponsor">Sponsor</a></li>
+                <li><a href="https://github.com/iAn-P1nt0/TrustVault-password-utils" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Cryptographically Secure</span>
+                    <br>Password Generation
+                </h1>
+                <p class="hero-subtitle">
+                    Open-source utilities built with TypeScript leveraging Web Crypto API for maximum security. 
+                    Zero dependencies for core functionality.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://www.npmjs.com/package/@trustvault/password-utils" class="btn btn-primary" target="_blank" rel="noopener">
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        </svg>
+                        View on npm
+                    </a>
+                    <a href="https://github.com/iAn-P1nt0/TrustVault-password-utils" class="btn btn-secondary" target="_blank" rel="noopener">
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">1.0.1</div>
+                        <div class="stat-label">Latest Version</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">Apache 2.0</div>
+                        <div class="stat-label">License</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">TypeScript</div>
+                        <div class="stat-label">Built With</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Cryptographically Secure</h3>
+                    <p>Uses Web Crypto API with rejection sampling to eliminate modulo bias, ensuring true randomness.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔑</div>
+                    <h3>Password Generation</h3>
+                    <p>Configurable length (8-128 chars) with customizable character sets and special options.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Passphrase Generation</h3>
+                    <p>Diceware-based with 384-word EFF wordlist subset for memorable yet secure passphrases.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Strength Analysis</h3>
+                    <p>Powered by zxcvbn with detailed feedback, suggestions, and real-time validation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>TypeScript First</h3>
+                    <p>Full type definitions, IntelliSense support, and modern ESM/CommonJS dual format.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌳</div>
+                    <h3>Tree Shakeable</h3>
+                    <p>Optimized bundle size with ESM support - only bundle what you actually use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            <p class="section-subtitle">Open-source projects focused on security and developer experience</p>
+            
+            <div class="project-showcase">
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">🔐</div>
+                        <div class="project-badges">
+                            <span class="badge badge-primary">Active Development</span>
+                            <span class="badge badge-success">v1.0.1</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">TrustVault Password Utils</h3>
+                    <p class="project-description">
+                        A comprehensive TypeScript library for generating cryptographically secure passwords and passphrases 
+                        with advanced strength analysis. Built with security best practices and zero-knowledge architecture.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Web Crypto API</span>
+                        <span class="tech-tag">zxcvbn</span>
+                        <span class="tech-tag">Vitest</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>59 passing tests with 100% coverage</span>
+                        </div>
+                        <div class="highlight">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Implements rejection sampling for unbiased randomness</span>
+                        </div>
+                        <div class="highlight">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Comprehensive password strength analysis with zxcvbn</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/iAn-P1nt0/TrustVault-password-utils" class="project-link" target="_blank" rel="noopener">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            View Repository
+                        </a>
+                        <a href="https://www.npmjs.com/package/@trustvault/password-utils" class="project-link" target="_blank" rel="noopener">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            </svg>
+                            View on npm
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🛡️</div>
+                        <div class="project-badges">
+                            <span class="badge badge-info">Coming Soon</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">TrustVault PWA</h3>
+                    <p class="project-description">
+                        A progressive web application for secure credential management built with React 19, 
+                        Material-UI, and clean architecture principles. Features offline-first design with IndexedDB.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Material-UI</span>
+                        <span class="tech-tag">IndexedDB</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Offline-first PWA with service worker</span>
+                        </div>
+                        <div class="highlight">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>End-to-end encrypted credential storage</span>
+                        </div>
+                        <div class="highlight">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Clean architecture with domain-driven design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsor Section -->
+    <section id="sponsor" class="sponsor">
+        <div class="container">
+            <div class="sponsor-content">
+                <div class="sponsor-icon">💖</div>
+                <h2 class="sponsor-title">Support Open Source Development</h2>
+                <p class="sponsor-description">
+                    Help keep TrustVault and other security-focused open-source projects actively maintained. 
+                    Your sponsorship enables continued development, security updates, and new features.
+                </p>
+                <div class="sponsor-benefits">
+                    <div class="benefit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Priority bug fixes and feature requests</span>
+                    </div>
+                    <div class="benefit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Regular security updates and improvements</span>
+                    </div>
+                    <div class="benefit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Support for new features and enhancements</span>
+                    </div>
+                </div>
+                <a href="https://github.com/sponsors/iAn-P1nt0" class="btn btn-sponsor" target="_blank" rel="noopener">
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    Become a GitHub Sponsor
+                </a>
+                <p class="sponsor-note">
+                    All contributions go directly towards development time, infrastructure costs, and security audits.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">TrustVault</h3>
+                    <p class="footer-description">
+                        Open-source security utilities built with TypeScript and modern web standards.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/iAn-P1nt0/TrustVault-password-utils#readme" target="_blank" rel="noopener">Documentation</a></li>
+                        <li><a href="https://github.com/iAn-P1nt0/TrustVault-password-utils/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a></li>
+                        <li><a href="https://github.com/iAn-P1nt0/TrustVault-password-utils/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog</a></li>
+                        <li><a href="https://github.com/iAn-P1nt0/TrustVault-password-utils/blob/main/LICENSE" target="_blank" rel="noopener">License</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/iAn-P1nt0" target="_blank" rel="noopener">GitHub Profile</a></li>
+                        <li><a href="https://github.com/sponsors/iAn-P1nt0" target="_blank" rel="noopener">GitHub Sponsors</a></li>
+                        <li><a href="https://www.npmjs.com/~ian-p1nt0" target="_blank" rel="noopener">npm Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Projects</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/iAn-P1nt0/TrustVault-password-utils" target="_blank" rel="noopener">Password Utils</a></li>
+                        <li><a href="https://www.npmjs.com/package/@trustvault/password-utils" target="_blank" rel="noopener">npm Package</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TrustVault. Licensed under Apache License 2.0</p>
+                <p class="footer-made-with">Made with ❤️ by <a href="https://github.com/iAn-P1nt0" target="_blank" rel="noopener">iAn-P1nt0</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
