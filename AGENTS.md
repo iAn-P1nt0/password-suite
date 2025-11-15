@@ -1,3 +1,53 @@
+---
+## Mandatory Enhancement Plan (always apply before new features)
+
+Every agent MUST follow the **prioritised roadmap below** when asked to
+enhance @trustvault/password-utils.  The sequence is security-impact-ranked
+and bundle-size-aware; do **not** deviate without explicit user approval.
+
+### Phase-1  “Zero-Days & Re-use” (highest ROI)
+1. **Breach-check wrapper** (`src/analyzer/breach.ts`)
+   - k-anon SHA-1 prefix → HIBP API, 24 h LRU cache, ≤2 kB gzipped
+   - API: `checkPasswordBreach(pwd, {allowNetwork}): Promise<BreachResult>`
+   - Offline-safe, opt-in network call
+2. **Argon2id client wrapper** (`src/utils/argon2.ts`)
+   - Uses `@noble/hashes` Argon2id, constant-time verify
+   - Web-worker offload (≤60 ms main-thread block)
+   - API: `hashPassword()` / `verifyPassword()`
+3. **NIST 800-63 policy engine** (`src/analyzer/policy.ts`)
+   - JSON-driven rules (≥64 char max, no composition theatre)
+   - <0.5 ms validation, enterprise extensible
+
+### Phase-2  “i18n & Age”
+4. Unicode character sets (`generators/unicode.ts`) – CJK, Cyrillic, Arabic
+5. Password-expiry estimator (`analyzer/expiry.ts`) – entropy + breach-age + crack-$ → rotation date
+6. Lazy-load zxcvbn – cut initial bundle by ~370 kB
+
+### Phase-3  “DX & A11y”
+7. Framework hooks – separate `@trustvault/password-utils-react|vue` packages
+8. Web-component `<password-generator>` – shadow-DOM, ARIA complete, 8 kB
+9. CLI tool – `npx tvpg --length 20 --count 10`
+
+Implement in the exact order above; each phase ships as minor semver bump
+(1.1.0 → 1.2.0 → 1.3.0) with **zero breaking changes** to existing APIs.
+
+### Exit Criteria for each feature
+- [ ] ≥95 % test coverage including security tests (timing, bias, entropy)
+- [ ] Bundle size gate passed (core ≤35 kB, lazy chunks ≤380 kB)
+- [ ] Full JSDoc + README update
+- [ ] TypeScript strict & lint clean
+- [ ] No `Math.random()`, no `any`, no new prod deps without justification
+
+### Forbidden short-cuts
+❌ Skip breach checker and jump to “nice-to-haves” like ML patterns  
+❌ Add heavy deps (>50 kB) without tree-shaking or lazy loading  
+❌ Introduce breaking API change without major-version bump  
+❌ Commit without regression tests for cryptographic properties (bias, entropy, timing)
+
+Always open PR against `main` with above checklist in the description.
+
+--- END_INSERT
+
 # AI Agent Instructions for TrustVault Password Utils
 
 ## Repository Context
@@ -509,16 +559,6 @@ describe('generatePassword', () => {
       // Test charset inclusion
     });
   });
-
-  describe('edge cases', () => {
-    it('should handle minimum length', () => {
-      // Test boundary
-    });
-
-    it('should handle maximum length', () => {
-      // Test boundary
-    });
-  });
 });
 ```
 
@@ -806,28 +846,6 @@ export { analyzePasswordStrength } from './analyzer/strength';
 // ❌ WRONG - Barrel exports prevent tree-shaking
 export * from './generators';
 export * from './analyzer';
-```
-
-**Lazy loading expensive dependencies:**
-```typescript
-// ✅ CORRECT - Load zxcvbn only when needed
-export async function analyzePasswordStrength(
-  password: string
-): Promise<PasswordStrengthResult> {
-  const zxcvbn = await import('zxcvbn');
-  const result = zxcvbn.default(password);
-  // Process result
-}
-
-// ❌ WRONG - Always loads zxcvbn even if not used
-import zxcvbn from 'zxcvbn';
-
-export function analyzePasswordStrength(
-  password: string
-): PasswordStrengthResult {
-  const result = zxcvbn(password);
-  // Process result
-}
 ```
 
 ### Algorithmic Optimization
