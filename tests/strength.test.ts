@@ -11,67 +11,67 @@ import {
 
 describe('Password Strength Analyzer', () => {
   describe('analyzePasswordStrength', () => {
-    it('should return weak for empty password', () => {
-      const result = analyzePasswordStrength('');
+    it('should return weak for empty password', async () => {
+      const result = await analyzePasswordStrength('');
       expect(result.strength).toBe('weak');
       expect(result.score).toBe(0);
       expect(result.weaknesses).toContain('Password is empty');
     });
 
-    it('should return weak for short password', () => {
-      const result = analyzePasswordStrength('abc123');
+    it('should return weak for short password', async () => {
+      const result = await analyzePasswordStrength('abc123');
       expect(result.strength).toBe('weak');
       expect(result.weaknesses).toContain('Password is too short (minimum 8 characters)');
     });
 
-    it('should detect common patterns', () => {
-      const result = analyzePasswordStrength('password123');
+    it('should detect common patterns', async () => {
+      const result = await analyzePasswordStrength('password123');
       expect(result.weaknesses.some(w => w.includes('common pattern'))).toBe(true);
     });
 
-    it('should detect keyboard patterns', () => {
-      const result = analyzePasswordStrength('qwerty12345');
+    it('should detect keyboard patterns', async () => {
+      const result = await analyzePasswordStrength('qwerty12345');
       expect(result.weaknesses.some(w => w.includes('keyboard pattern'))).toBe(true);
     });
 
-    it('should detect year patterns', () => {
-      const result = analyzePasswordStrength('test2024pass');
+    it('should detect year patterns', async () => {
+      const result = await analyzePasswordStrength('test2024pass');
       expect(result.weaknesses.some(w => w.includes('year or date'))).toBe(true);
     });
 
-    it('should return strong for good password', () => {
-      const result = analyzePasswordStrength('X9$mK#2pL@7qR!4s');
+    it('should return strong for good password', async () => {
+      const result = await analyzePasswordStrength('X9$mK#2pL@7qR!4s');
       expect(['strong', 'very-strong']).toContain(result.strength);
       expect(result.score).toBeGreaterThan(60);
     });
 
-    it('should calculate entropy', () => {
-      const result = analyzePasswordStrength('MyP@ssw0rd123');
+    it('should calculate entropy', async () => {
+      const result = await analyzePasswordStrength('MyP@ssw0rd123');
       expect(result.entropy).toBeGreaterThan(0);
       expect(result.entropy).toBeLessThan(100);
     });
 
-    it('should provide crack time estimate', () => {
-      const result = analyzePasswordStrength('weakpass');
+    it('should provide crack time estimate', async () => {
+      const result = await analyzePasswordStrength('weakpass');
       expect(result.crackTime).toBeTruthy();
       expect(result.crackTimeSeconds).toBeGreaterThanOrEqual(0);
     });
 
-    it('should provide feedback', () => {
-      const result = analyzePasswordStrength('password');
+    it('should provide feedback', async () => {
+      const result = await analyzePasswordStrength('password');
       expect(result.feedback).toBeDefined();
       expect(result.feedback.suggestions).toBeInstanceOf(Array);
     });
 
-    it('should detect lack of character diversity', () => {
-      const result = analyzePasswordStrength('alllowercase');
+    it('should detect lack of character diversity', async () => {
+      const result = await analyzePasswordStrength('alllowercase');
       expect(result.weaknesses.some(w => w.includes('character diversity'))).toBe(true);
     });
 
-    it('should give higher score to diverse passwords', () => {
-      const simple = analyzePasswordStrength('aaaaaaaa');
-      const diverse = analyzePasswordStrength('aB3$fG9@');
-      
+    it('should give higher score to diverse passwords', async () => {
+      const simple = await analyzePasswordStrength('aaaaaaaa');
+      const diverse = await analyzePasswordStrength('aB3$fG9@');
+
       expect(diverse.score).toBeGreaterThan(simple.score);
       expect(diverse.entropy).toBeGreaterThan(simple.entropy);
     });
