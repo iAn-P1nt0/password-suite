@@ -396,9 +396,9 @@ See the [examples directory](https://github.com/iAn-P1nt0/TrustVault-password-ut
 
 ## Related Packages
 
-- [@trustvault/password-utils](https://www.npmjs.com/package/@trustvault/password-utils) - Core library
-- [@trustvault/password-utils-react](https://www.npmjs.com/package/@trustvault/password-utils-react) - React hooks
-- [@trustvault/password-utils-vue](https://www.npmjs.com/package/@trustvault/password-utils-vue) - Vue composables
+- [@ian-p1nt0/password-utils](https://www.npmjs.com/package/@ian-p1nt0/password-utils) - Core library
+- [@ian-p1nt0/password-utils-react](https://www.npmjs.com/package/@ian-p1nt0/password-utils-react) - React hooks
+- [@ian-p1nt0/password-utils-vue](https://www.npmjs.com/package/@ian-p1nt0/password-utils-vue) - Vue composables
 
 ## License
 

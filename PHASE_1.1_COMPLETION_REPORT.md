@@ -330,7 +330,7 @@ From AGENTS.md Phase 1.1 requirements:
 ### Quick Start
 
 ```typescript
-import { checkPasswordBreach } from '@trustvault/password-utils';
+import { checkPasswordBreach } from '@ian-p1nt0/password-utils';
 
 // Check password
 const result = await checkPasswordBreach('password123');
@@ -433,4 +433,4 @@ Phase 1.1 has been successfully completed with all requirements met:
 **Generated**: November 15, 2025
 **Author**: Claude Code
 **Version**: 1.0.0
-**Package**: @trustvault/password-utils
+**Package**: @ian-p1nt0/password-utils

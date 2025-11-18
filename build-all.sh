@@ -50,7 +50,7 @@ fi
 echo ""
 
 # Build React package
-print_step "Building React hooks package (@trustvault/password-utils-react)..."
+print_step "Building React hooks package (@ian-p1nt0/password-utils-react)..."
 cd packages/react
 if npm install --silent 2>&1 && npm run build 2>&1 | tee /tmp/react-build.log; then
     print_success "React package built successfully"

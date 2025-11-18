@@ -324,7 +324,7 @@ class BreachChecker {
         const response = await fetch(`${HIBP_API_URL}${prefix}`, {
           signal: controller.signal,
           headers: {
-            'User-Agent': '@trustvault/password-utils',
+            'User-Agent': '@ian-p1nt0/password-utils',
           },
         });
 

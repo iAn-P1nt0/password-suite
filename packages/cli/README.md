@@ -506,8 +506,8 @@ npx @trustvault/password-cli generate
 
 ## Related Packages
 
-- [@trustvault/password-utils](https://www.npmjs.com/package/@trustvault/password-utils) - Core library
-- [@trustvault/password-utils-react](https://www.npmjs.com/package/@trustvault/password-utils-react) - React hooks
+- [@ian-p1nt0/password-utils](https://www.npmjs.com/package/@ian-p1nt0/password-utils) - Core library
+- [@ian-p1nt0/password-utils-react](https://www.npmjs.com/package/@ian-p1nt0/password-utils-react) - React hooks
 - [@trustvault/password-generator-element](https://www.npmjs.com/package/@trustvault/password-generator-element) - Web component
 
 ## Contributing

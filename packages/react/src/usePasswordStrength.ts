@@ -36,7 +36,7 @@ import {
   analyzePasswordStrength, 
   preloadZxcvbn,
   type PasswordStrengthResult 
-} from '@trustvault/password-utils';
+} from '@ian-p1nt0/password-utils';
 
 /**
  * Options for usePasswordStrength hook

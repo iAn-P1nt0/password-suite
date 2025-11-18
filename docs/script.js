@@ -126,7 +126,7 @@ document.addEventListener('keydown', (e) => {
 
 // Add copy-to-clipboard functionality for npm install command
 function addCopyButtons() {
-    const installCommand = 'npm install @trustvault/password-utils';
+    const installCommand = 'npm install @ian-p1nt0/password-utils';
     
     // You can add copy buttons to code snippets in the future
     console.log('Install command:', installCommand);

@@ -60,7 +60,7 @@ TOTAL_TESTS=$((TOTAL_TESTS + 1))
 echo ""
 
 # Test React package with timeout
-print_step "Testing React hooks package (@trustvault/password-utils-react)..."
+print_step "Testing React hooks package (@ian-p1nt0/password-utils-react)..."
 cd packages/react
 if timeout 120 npm test 2>&1 | tee /tmp/react-test.log; then
     print_success "React package tests passed"

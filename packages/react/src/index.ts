@@ -1,5 +1,5 @@
 /**
- * @trustvault/password-utils-react
+ * @ian-p1nt0/password-utils-react
  * 
  * React hooks for TrustVault password utilities
  * 
@@ -35,4 +35,4 @@ export type {
   PassphraseOptions,
   PasswordStrengthResult,
   BreachResult,
-} from '@trustvault/password-utils';
+} from '@ian-p1nt0/password-utils';

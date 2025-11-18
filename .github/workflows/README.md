@@ -1,6 +1,6 @@
 # GitHub Workflows
 
-This directory contains GitHub Actions workflows for the @trustvault/password-utils package.
+This directory contains GitHub Actions workflows for the @ian-p1nt0/password-utils package.
 
 ## Active Workflows
 
@@ -111,7 +111,7 @@ Add these to your README.md:
 ```markdown
 [![CI](https://github.com/iAn-P1nt0/TrustVault-password-utils/workflows/CI/badge.svg)](https://github.com/iAn-P1nt0/TrustVault-password-utils/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/iAn-P1nt0/TrustVault-password-utils/workflows/CodeQL/badge.svg)](https://github.com/iAn-P1nt0/TrustVault-password-utils/actions/workflows/codeql.yml)
-[![npm version](https://img.shields.io/npm/v/@trustvault/password-utils.svg)](https://www.npmjs.com/package/@trustvault/password-utils)
+[![npm version](https://img.shields.io/npm/v/@ian-p1nt0/password-utils.svg)](https://www.npmjs.com/package/@ian-p1nt0/password-utils)
 ```
 
 ## Troubleshooting

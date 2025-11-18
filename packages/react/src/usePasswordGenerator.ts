@@ -28,7 +28,7 @@ import {
   generatePassword,
   type PasswordGeneratorOptions,
   type GeneratedPassword,
-} from '@trustvault/password-utils';
+} from '@ian-p1nt0/password-utils';
 
 /**
  * Result from usePasswordGenerator hook

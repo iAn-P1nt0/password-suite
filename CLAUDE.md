@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-**@trustvault/password-utils** is a cryptographically secure password and passphrase generation library with comprehensive strength analysis capabilities. Built with TypeScript and leveraging the Web Crypto API, this package provides production-ready utilities for password management in web applications.
+**@ian-p1nt0/password-utils** is a cryptographically secure password and passphrase generation library with comprehensive strength analysis capabilities. Built with TypeScript and leveraging the Web Crypto API, this package provides production-ready utilities for password management in web applications.
 
 **Package Information:**
-- **Name:** @trustvault/password-utils
-- **Version:** 1.0.0
+- **Name:** @ian-p1nt0/password-utils
+- **Version:** 1.0.1
 - **License:** Apache-2.0
 - **Node:** >=20.0.0
 - **Bundle Formats:** CommonJS + ESM
@@ -311,7 +311,7 @@ formatTOTPCode("123456") // Returns: "123 456"
 
 **Basic Password Generation:**
 ```typescript
-import { generatePassword } from '@trustvault/password-utils';
+import { generatePassword } from '@ian-p1nt0/password-utils';
 
 const result = generatePassword({
   length: 16,
@@ -328,7 +328,7 @@ console.log(result.entropy);   // 95.2 bits
 
 **Passphrase Generation:**
 ```typescript
-import { generatePassphrase } from '@trustvault/password-utils';
+import { generatePassphrase } from '@ian-p1nt0/password-utils';
 
 const result = generatePassphrase({
   wordCount: 5,
@@ -342,7 +342,7 @@ console.log(result.password);  // "Forest-Mountain-River-Sky-Ocean47"
 
 **Strength Analysis:**
 ```typescript
-import { analyzePasswordStrength } from '@trustvault/password-utils';
+import { analyzePasswordStrength } from '@ian-p1nt0/password-utils';
 
 const analysis = analyzePasswordStrength("password123");
 
@@ -355,7 +355,7 @@ console.log(analysis.weaknesses);   // ["Common password", "Predictable sequence
 
 **Real-time Validation:**
 ```typescript
-import { quickStrengthCheck } from '@trustvault/password-utils';
+import { quickStrengthCheck } from '@ian-p1nt0/password-utils';
 
 const check = quickStrengthCheck(userInput);
 

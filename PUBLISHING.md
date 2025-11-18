@@ -1,4 +1,4 @@
-# Publishing Guide for @trustvault/password-utils
+# Publishing Guide for @ian-p1nt0/password-utils
 
 This guide walks through the process of publishing this package to the npm registry.
 
@@ -49,7 +49,7 @@ Before publishing, ensure all criteria are met:
 
 ### Package Configuration
 - [ ] `package.json` version is correct
-- [ ] `package.json` name is `@trustvault/password-utils`
+- [ ] `package.json` name is `@ian-p1nt0/password-utils`
 - [ ] `package.json` has correct repository URLs
 - [ ] `package.json` has appropriate keywords
 - [ ] `package.json` `files` field includes only necessary files
@@ -110,7 +110,7 @@ npm install ../TrustVault-password-utils/trustvault-password-utils-1.0.0.tgz
 Create a test file:
 ```javascript
 // test.js
-const { generatePassword, analyzePasswordStrength } = require('@trustvault/password-utils');
+const { generatePassword, analyzePasswordStrength } = require('@ian-p1nt0/password-utils');
 
 const result = generatePassword({ length: 16 });
 console.log('Password:', result.password);
@@ -160,17 +160,17 @@ npm publish --access public --otp=123456
 
 **Check on npm:**
 ```bash
-npm view @trustvault/password-utils
+npm view @ian-p1nt0/password-utils
 ```
 
 **Install and test:**
 ```bash
-npm install @trustvault/password-utils
+npm install @ian-p1nt0/password-utils
 ```
 
 **View on npmjs.com:**
 ```
-https://www.npmjs.com/package/@trustvault/password-utils
+https://www.npmjs.com/package/@ian-p1nt0/password-utils
 ```
 
 ---
@@ -268,7 +268,7 @@ npm version major   # 1.0.0 → 2.0.0
 
 **After `npm publish`:**
 - [ ] Verify on npmjs.com
-- [ ] Test installation: `npm install @trustvault/password-utils`
+- [ ] Test installation: `npm install @ian-p1nt0/password-utils`
 - [ ] Create GitHub release
 - [ ] Announce on relevant channels
 - [ ] Update documentation site (if applicable)
@@ -281,7 +281,7 @@ npm version major   # 1.0.0 → 2.0.0
 
 **Solution:**
 - Verify you're logged in: `npm whoami`
-- Check scope ownership: `npm owner ls @trustvault/password-utils`
+- Check scope ownership: `npm owner ls @ian-p1nt0/password-utils`
 - Request access from organization admin
 - Or change package name to your own scope
 
@@ -336,7 +336,7 @@ Use your GitHub username and personal access token.
 
 ```json
 {
-  "name": "@trustvault/password-utils",
+  "name": "@ian-p1nt0/password-utils",
   "repository": {
     "type": "git",
     "url": "https://github.com/iAn-P1nt0/TrustVault-password-utils.git"

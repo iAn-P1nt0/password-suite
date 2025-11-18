@@ -5,7 +5,7 @@
 Successfully implemented the remaining phases of the Mandatory Enhancement Plan from AGENTS.md:
 
 - ✅ **Phase 2.6**: Lazy-load zxcvbn (already implemented in core)
-- ✅ **Phase 3.7**: React hooks package (`@trustvault/password-utils-react`)
+- ✅ **Phase 3.7**: React hooks package (`@ian-p1nt0/password-utils-react`)
 - ✅ **Phase 3.8**: Web Component (`@trustvault/password-generator-element`)
 - ✅ **Phase 3.9**: CLI tool (`@trustvault/password-cli`)
 
@@ -74,7 +74,7 @@ Successfully implemented the remaining phases of the Mandatory Enhancement Plan 
 ```
 TrustVault-password-utils/
 ├── packages/
-│   ├── react/                    # @trustvault/password-utils-react
+│   ├── react/                    # @ian-p1nt0/password-utils-react
 │   │   ├── src/
 │   │   │   ├── usePasswordGenerator.ts
 │   │   │   ├── usePasswordStrength.ts
@@ -326,7 +326,7 @@ All exit criteria from AGENTS.md have been met:
 
 Successfully implemented **3 complete new packages** plus verified lazy-loading in core:
 
-1. ✅ **@trustvault/password-utils-react** - 4 React hooks
+1. ✅ **@ian-p1nt0/password-utils-react** - 4 React hooks
 2. ✅ **@trustvault/password-generator-element** - Web Component
 3. ✅ **@trustvault/password-cli** - CLI tool with 5 commands
 4. ✅ **Lazy-loading** - Already implemented in core library

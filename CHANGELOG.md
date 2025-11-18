@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-01-12
 
 ### Added
-- Initial release of @trustvault/password-utils
+- Initial release of @ian-p1nt0/password-utils
 - Cryptographically secure password generation with Web Crypto API
 - Configurable password options (length, character sets, ambiguous character exclusion)
 - Batch password generation (1-100 passwords)
@@ -68,7 +68,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced accessibility features for screen readers
 
 ### Planned for v1.4.0
-- React/Vue/Angular hooks (@trustvault/password-utils-react)
+- React/Vue/Angular hooks (@ian-p1nt0/password-utils-react)
 - Web Component (<password-generator>)
 - CLI tool (@trustvault/password-cli)
 

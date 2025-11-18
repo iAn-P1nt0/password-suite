@@ -1,5 +1,5 @@
 {
-  "name": "@trustvault/password-utils-react",
+  "name": "@ian-p1nt0/password-utils-react",
   "version": "1.0.0",
   "description": "React hooks for TrustVault password utilities",
   "type": "module",
@@ -50,7 +50,7 @@
     "react": ">=16.8.0"
   },
   "dependencies": {
-    "@trustvault/password-utils": "file:../.."
+    "@ian-p1nt0/password-utils": "file:../.."
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",

@@ -1,8 +1,8 @@
-# @trustvault/password-utils-react
+# @ian-p1nt0/password-utils-react
 
 React hooks for [TrustVault Password Utils](https://github.com/iAn-P1nt0/TrustVault-password-utils).
 
-[![npm version](https://img.shields.io/npm/v/@trustvault/password-utils-react.svg)](https://www.npmjs.com/package/@trustvault/password-utils-react)
+[![npm version](https://img.shields.io/npm/v/@ian-p1nt0/password-utils-react.svg)](https://www.npmjs.com/package/@ian-p1nt0/password-utils-react)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/TrustVault-password-utils/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 
@@ -19,15 +19,15 @@ React hooks for [TrustVault Password Utils](https://github.com/iAn-P1nt0/TrustVa
 ## Installation
 
 ```bash
-npm install @trustvault/password-utils-react
+npm install @ian-p1nt0/password-utils-react
 ```
 
 ```bash
-yarn add @trustvault/password-utils-react
+yarn add @ian-p1nt0/password-utils-react
 ```
 
 ```bash
-pnpm add @trustvault/password-utils-react
+pnpm add @ian-p1nt0/password-utils-react
 ```
 
 ## Quick Start
@@ -35,7 +35,7 @@ pnpm add @trustvault/password-utils-react
 ### Password Generation
 
 ```tsx
-import { usePasswordGenerator } from '@trustvault/password-utils-react';
+import { usePasswordGenerator } from '@ian-p1nt0/password-utils-react';
 
 function PasswordForm() {
   const { password, generate, loading, clear } = usePasswordGenerator({
@@ -66,7 +66,7 @@ function PasswordForm() {
 
 ```tsx
 import { useState } from 'react';
-import { usePasswordStrength } from '@trustvault/password-utils-react';
+import { usePasswordStrength } from '@ian-p1nt0/password-utils-react';
 
 function PasswordInput() {
   const [password, setPassword] = useState('');
@@ -133,7 +133,7 @@ function StrengthMeter({ score }: { score: number }) {
 ### Passphrase Generation
 
 ```tsx
-import { usePassphraseGenerator } from '@trustvault/password-utils-react';
+import { usePassphraseGenerator } from '@ian-p1nt0/password-utils-react';
 
 function PassphraseForm() {
   const { passphrase, generate, loading } = usePassphraseGenerator({
@@ -159,7 +159,7 @@ function PassphraseForm() {
 
 ```tsx
 import { useState } from 'react';
-import { useBreachCheck } from '@trustvault/password-utils-react';
+import { useBreachCheck } from '@ian-p1nt0/password-utils-react';
 
 function SignupForm() {
   const [password, setPassword] = useState('');
@@ -300,7 +300,7 @@ import {
   usePasswordGenerator,
   usePasswordStrength,
   useBreachCheck
-} from '@trustvault/password-utils-react';
+} from '@ian-p1nt0/password-utils-react';
 
 function CompletePasswordForm() {
   const [password, setPassword] = useState('');
@@ -354,7 +354,7 @@ function CompletePasswordForm() {
 
 ```tsx
 import { useEffect } from 'react';
-import { preloadZxcvbn } from '@trustvault/password-utils';
+import { preloadZxcvbn } from '@ian-p1nt0/password-utils';
 
 function App() {
   // Preload zxcvbn on app mount
@@ -380,7 +380,7 @@ import type {
   PassphraseOptions,
   PasswordStrengthResult,
   BreachResult
-} from '@trustvault/password-utils-react';
+} from '@ian-p1nt0/password-utils-react';
 ```
 
 ## Performance Tips
@@ -402,8 +402,8 @@ Apache-2.0
 
 ## Related Packages
 
-- [@trustvault/password-utils](https://www.npmjs.com/package/@trustvault/password-utils) - Core library
-- [@trustvault/password-utils-vue](https://www.npmjs.com/package/@trustvault/password-utils-vue) - Vue 3 composables
+- [@ian-p1nt0/password-utils](https://www.npmjs.com/package/@ian-p1nt0/password-utils) - Core library
+- [@ian-p1nt0/password-utils-vue](https://www.npmjs.com/package/@ian-p1nt0/password-utils-vue) - Vue 3 composables
 
 ## Contributing
 
