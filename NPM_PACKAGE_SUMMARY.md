@@ -1,4 +1,4 @@
-# NPM Package Summary - @ian-p1nt0/password-utils
+# NPM Package Summary - password-utils
 
 ## Package Status: ✅ Ready for Publication
 
@@ -89,7 +89,7 @@ The following files were removed as they were specific to the PWA deployment and
 
 ```json
 {
-  "name": "@ian-p1nt0/password-utils",
+  "name": "password-utils",
   "version": "1.0.0",
   "description": "Cryptographically secure password and passphrase generation utilities with strength analysis",
   "type": "module",
@@ -133,7 +133,7 @@ Excludes development files from published package:
 ## Package Contents (What Gets Published)
 
 ```
-@ian-p1nt0/password-utils@1.0.0
+password-utils@1.0.0
 ├── dist/
 │   ├── index.cjs          # CommonJS bundle (22.0 KB)
 │   ├── index.js           # ESM bundle (19.8 KB)
@@ -206,7 +206,7 @@ import {
   generatePasswords,
   generatePronounceablePassword,
   getDefaultOptions
-} from '@ian-p1nt0/password-utils';
+} from 'password-utils';
 ```
 
 **Passphrase Generation:**
@@ -215,7 +215,7 @@ import {
   generatePassphrase,
   generateMemorablePassphrase,
   getDefaultPassphraseOptions
-} from '@ian-p1nt0/password-utils';
+} from 'password-utils';
 ```
 
 **Strength Analysis:**
@@ -224,12 +224,12 @@ import {
   analyzePasswordStrength,
   quickStrengthCheck,
   meetsMinimumRequirements
-} from '@ian-p1nt0/password-utils';
+} from 'password-utils';
 ```
 
 **Utilities:**
 ```typescript
-import { formatTOTPCode } from '@ian-p1nt0/password-utils';
+import { formatTOTPCode } from 'password-utils';
 ```
 
 **TypeScript Types:**
@@ -241,7 +241,7 @@ import type {
   PasswordStrengthResult,
   QuickStrengthResult,
   MinimumRequirementsResult
-} from '@ian-p1nt0/password-utils';
+} from 'password-utils';
 ```
 
 ---
@@ -311,8 +311,8 @@ npm publish --access public
 
 ### Post-Publish
 
-- [ ] Verify on npmjs.com: https://www.npmjs.com/package/@ian-p1nt0/password-utils
-- [ ] Test installation: `npm install @ian-p1nt0/password-utils`
+- [ ] Verify on npmjs.com: https://www.npmjs.com/package/password-utils
+- [ ] Test installation: `npm install password-utils`
 - [ ] Create GitHub release: `gh release create v1.0.0`
 - [ ] Announce on relevant channels
 - [ ] Update documentation site (if applicable)
@@ -324,15 +324,15 @@ npm publish --access public
 Once published, users can install with:
 
 ```bash
-npm install @ian-p1nt0/password-utils
+npm install password-utils
 ```
 
 ```bash
-yarn add @ian-p1nt0/password-utils
+yarn add password-utils
 ```
 
 ```bash
-pnpm add @ian-p1nt0/password-utils
+pnpm add password-utils
 ```
 
 ---
@@ -340,7 +340,7 @@ pnpm add @ian-p1nt0/password-utils
 ## Usage Example
 
 ```typescript
-import { generatePassword, analyzePasswordStrength } from '@ian-p1nt0/password-utils';
+import { generatePassword, analyzePasswordStrength } from 'password-utils';
 
 // Generate a password
 const result = generatePassword({

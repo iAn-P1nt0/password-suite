@@ -1,12 +1,12 @@
-# @iAn-P1nt0/password-utils
+# password-utils
 
-[![npm version](https://img.shields.io/npm/v/@iAn-P1nt0/password-utils.svg)](https://www.npmjs.com/package/@iAn-P1nt0/password-utils)
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/TrustVault-password-utils/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/password-utils.svg)](https://www.npmjs.com/package/password-utils)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/password-utils/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 
 Cryptographically secure password and passphrase generation utilities with comprehensive strength analysis. Built with TypeScript and leveraging the Web Crypto API for maximum security.
 
-> 🌐 **[View Landing Page](https://ian-p1nt0.github.io/TrustVault-password-utils/)** | 💖 **[Sponsor on GitHub](https://github.com/sponsors/iAn-P1nt0)**
+> 🌐 **[View Landing Page](https://ian-p1nt0.github.io/password-utils/)** | 💖 **[Sponsor on GitHub](https://github.com/sponsors/iAn-P1nt0)**
 
 ## Features
 
@@ -25,15 +25,15 @@ Cryptographically secure password and passphrase generation utilities with compr
 ## Installation
 
 ```bash
-npm install @iAn-P1nt0/password-utils
+npm install password-utils
 ```
 
 ```bash
-yarn add @iAn-P1nt0/password-utils
+yarn add password-utils
 ```
 
 ```bash
-pnpm add @iAn-P1nt0/password-utils
+pnpm add password-utils
 ```
 
 ## Quick Start
@@ -41,7 +41,7 @@ pnpm add @iAn-P1nt0/password-utils
 ### Password Generation
 
 ```typescript
-import { generatePassword } from '@iAn-P1nt0/password-utils';
+import { generatePassword } from 'password-utils';
 
 const result = generatePassword({
   length: 16,
@@ -59,7 +59,7 @@ console.log(result.entropy);   // 95.2
 ### Passphrase Generation
 
 ```typescript
-import { generatePassphrase } from '@iAn-P1nt0/password-utils';
+import { generatePassphrase } from 'password-utils';
 
 const result = generatePassphrase({
   wordCount: 5,
@@ -75,7 +75,7 @@ console.log(result.entropy);   // 67.2
 ### Password Strength Analysis
 
 ```typescript
-import { analyzePasswordStrength } from '@iAn-P1nt0/password-utils';
+import { analyzePasswordStrength } from 'password-utils';
 
 const analysis = analyzePasswordStrength("password123");
 
@@ -89,7 +89,7 @@ console.log(analysis.weaknesses);   // ["Common password", "Predictable sequence
 ### Real-time Validation
 
 ```typescript
-import { quickStrengthCheck } from '@iAn-P1nt0/password-utils';
+import { quickStrengthCheck } from 'password-utils';
 
 const check = quickStrengthCheck(userInput);
 
@@ -105,11 +105,11 @@ console.log(check.strength);   // "weak"
 Install the React hooks package:
 
 ```bash
-npm install @iAn-P1nt0/password-utils-react
+npm install password-utils-react
 ```
 
 ```tsx
-import { usePasswordGenerator, usePasswordStrength } from '@iAn-P1nt0/password-utils-react';
+import { usePasswordGenerator, usePasswordStrength } from 'password-utils-react';
 
 function PasswordForm() {
   const { password, generate, loading } = usePasswordGenerator({ length: 20 });
@@ -400,7 +400,7 @@ import type {
   PasswordStrengthResult,
   QuickStrengthResult,
   MinimumRequirementsResult
-} from '@iAn-P1nt0/password-utils';
+} from 'password-utils';
 ```
 
 ## Bundle Size
@@ -427,7 +427,7 @@ Requires browsers with Web Crypto API support:
 
 ```typescript
 import { useState, useCallback } from 'react';
-import { generatePassword, analyzePasswordStrength } from '@iAn-P1nt0/password-utils';
+import { generatePassword, analyzePasswordStrength } from 'password-utils';
 
 function usePasswordGenerator() {
   const [password, setPassword] = useState('');
@@ -446,7 +446,7 @@ function usePasswordGenerator() {
 ### Form Validation Example
 
 ```typescript
-import { quickStrengthCheck, meetsMinimumRequirements } from '@iAn-P1nt0/password-utils';
+import { quickStrengthCheck, meetsMinimumRequirements } from 'password-utils';
 
 function validatePassword(password: string): string | null {
   const requirements = meetsMinimumRequirements(password);
@@ -468,7 +468,7 @@ function validatePassword(password: string): string | null {
 ### Batch Generation Example
 
 ```typescript
-import { generatePasswords } from '@iAn-P1nt0/password-utils';
+import { generatePasswords } from 'password-utils';
 
 // Generate 10 passwords for testing
 const passwords = generatePasswords(10, {
@@ -526,7 +526,7 @@ Contributions are welcome! Please follow these guidelines:
 4. **Documentation** - Update README and JSDoc comments
 5. **No Breaking Changes** - Follow semantic versioning
 
-See [AGENTS.md](https://github.com/iAn-P1nt0/TrustVault-password-utils/blob/main/AGENTS.md) for detailed development guidelines.
+See [AGENTS.md](https://github.com/iAn-P1nt0/password-utils/blob/main/AGENTS.md) for detailed development guidelines.
 
 ## License
 
@@ -540,10 +540,10 @@ Apache License 2.0 - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- **Landing Page:** [https://ian-p1nt0.github.io/TrustVault-password-utils/](https://ian-p1nt0.github.io/TrustVault-password-utils/)
-- **Issues:** [GitHub Issues](https://github.com/iAn-P1nt0/TrustVault-password-utils/issues)
-- **Repository:** [GitHub](https://github.com/iAn-P1nt0/TrustVault-password-utils)
-- **NPM:** [@ian-p1nt0/password-utils](https://www.npmjs.com/package/@ian-p1nt0/password-utils)
+- **Landing Page:** [https://ian-p1nt0.github.io/password-utils/](https://ian-p1nt0.github.io/password-utils/)
+- **Issues:** [GitHub Issues](https://github.com/iAn-P1nt0/password-utils/issues)
+- **Repository:** [GitHub](https://github.com/iAn-P1nt0/password-utils)
+- **NPM:** [password-utils](https://www.npmjs.com/package/password-utils)
 - **Sponsor:** [GitHub Sponsors](https://github.com/sponsors/iAn-P1nt0) 💖
 
 ---

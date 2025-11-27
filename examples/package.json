@@ -1,7 +1,7 @@
 {
   "name": "password-utils-examples",
   "version": "1.0.1",
-  "description": "Examples for @ian-p1nt0/password-utils package",
+  "description": "Examples for password-utils package",
   "private": true,
   "scripts": {
     "demo": "npm run demo:1 && npm run demo:2 && npm run demo:3 && npm run demo:4 && npm run demo:5",
@@ -21,7 +21,7 @@
   "author": "TrustVault",
   "license": "Apache-2.0",
   "dependencies": {
-    "@ian-p1nt0/password-utils": "file:../trustvault-password-utils-1.0.0.tgz"
+    "password-utils": "file:../password-utils-1.0.0.tgz"
   },
   "engines": {
     "node": ">=20.0.0"

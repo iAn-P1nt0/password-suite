@@ -5,7 +5,7 @@
  * including pattern detection and actionable feedback.
  */
 
-const { analyzePasswordStrength } = require('@ian-p1nt0/password-utils');
+const { analyzePasswordStrength } = require('password-utils');
 
 console.log('=== Password Strength Analysis ===\n');
 
@@ -57,7 +57,7 @@ testPasswords.forEach((test, index) => {
 // Demonstrate analyzing a generated password
 console.log('\n=== Analyzing a Generated Password ===\n');
 
-const { generatePassword } = require('@ian-p1nt0/password-utils');
+const { generatePassword } = require('password-utils');
 
 const generated = generatePassword({ length: 20 });
 console.log(`Generated Password: ${generated.password}`);

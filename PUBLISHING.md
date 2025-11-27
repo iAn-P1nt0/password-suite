@@ -1,4 +1,4 @@
-# Publishing Guide for @ian-p1nt0/password-utils
+# Publishing Guide for password-utils
 
 This guide walks through the process of publishing this package to the npm registry.
 
@@ -49,7 +49,7 @@ Before publishing, ensure all criteria are met:
 
 ### Package Configuration
 - [ ] `package.json` version is correct
-- [ ] `package.json` name is `@ian-p1nt0/password-utils`
+- [ ] `package.json` name is `password-utils`
 - [ ] `package.json` has correct repository URLs
 - [ ] `package.json` has appropriate keywords
 - [ ] `package.json` `files` field includes only necessary files
@@ -87,7 +87,7 @@ npm pack
 
 This creates a `.tgz` file you can inspect. Extract and verify:
 ```bash
-tar -xzf trustvault-password-utils-1.0.0.tgz
+tar -xzf password-utils-1.0.0.tgz
 cd package
 ls -la
 ```
@@ -96,7 +96,7 @@ ls -la
 
 **Install from tarball:**
 ```bash
-npm install /path/to/trustvault-password-utils-1.0.0.tgz
+npm install /path/to/password-utils-1.0.0.tgz
 ```
 
 **Test in a separate project:**
@@ -104,13 +104,13 @@ npm install /path/to/trustvault-password-utils-1.0.0.tgz
 mkdir test-project
 cd test-project
 npm init -y
-npm install ../TrustVault-password-utils/trustvault-password-utils-1.0.0.tgz
+npm install ../password-utils/password-utils-1.0.0.tgz
 ```
 
 Create a test file:
 ```javascript
 // test.js
-const { generatePassword, analyzePasswordStrength } = require('@ian-p1nt0/password-utils');
+const { generatePassword, analyzePasswordStrength } = require('password-utils');
 
 const result = generatePassword({ length: 16 });
 console.log('Password:', result.password);
@@ -160,17 +160,17 @@ npm publish --access public --otp=123456
 
 **Check on npm:**
 ```bash
-npm view @ian-p1nt0/password-utils
+npm view password-utils
 ```
 
 **Install and test:**
 ```bash
-npm install @ian-p1nt0/password-utils
+npm install password-utils
 ```
 
 **View on npmjs.com:**
 ```
-https://www.npmjs.com/package/@ian-p1nt0/password-utils
+https://www.npmjs.com/package/password-utils
 ```
 
 ---
@@ -268,7 +268,7 @@ npm version major   # 1.0.0 → 2.0.0
 
 **After `npm publish`:**
 - [ ] Verify on npmjs.com
-- [ ] Test installation: `npm install @ian-p1nt0/password-utils`
+- [ ] Test installation: `npm install password-utils`
 - [ ] Create GitHub release
 - [ ] Announce on relevant channels
 - [ ] Update documentation site (if applicable)
@@ -281,7 +281,7 @@ npm version major   # 1.0.0 → 2.0.0
 
 **Solution:**
 - Verify you're logged in: `npm whoami`
-- Check scope ownership: `npm owner ls @ian-p1nt0/password-utils`
+- Check scope ownership: `npm owner ls password-utils`
 - Request access from organization admin
 - Or change package name to your own scope
 
@@ -336,10 +336,10 @@ Use your GitHub username and personal access token.
 
 ```json
 {
-  "name": "@ian-p1nt0/password-utils",
+  "name": "password-utils",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iAn-P1nt0/TrustVault-password-utils.git"
+    "url": "https://github.com/iAn-P1nt0/password-utils.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -423,7 +423,7 @@ For publishing issues:
 - GitHub Package Registry: https://docs.github.com/en/packages
 
 For package-specific issues:
-- GitHub Issues: https://github.com/iAn-P1nt0/TrustVault-password-utils/issues
+- GitHub Issues: https://github.com/iAn-P1nt0/password-utils/issues
 
 ---
 

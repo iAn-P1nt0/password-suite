@@ -5,7 +5,7 @@
  * with various configurations.
  */
 
-const { generatePassword, getDefaultOptions } = require('@ian-p1nt0/password-utils');
+const { generatePassword, getDefaultOptions } = require('password-utils');
 
 console.log('=== Basic Password Generation ===\n');
 

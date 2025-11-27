@@ -15,7 +15,7 @@ const {
   quickStrengthCheck,
   meetsMinimumRequirements,
   formatTOTPCode
-} = require('@ian-p1nt0/password-utils');
+} = require('password-utils');
 
 console.log('╔════════════════════════════════════════════════════════════╗');
 console.log('║     Password Utils - Comprehensive Feature Demo           ║');

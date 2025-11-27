@@ -8,7 +8,7 @@
 const {
   quickStrengthCheck,
   meetsMinimumRequirements
-} = require('@ian-p1nt0/password-utils');
+} = require('password-utils');
 
 console.log('=== Quick Strength Validation ===\n');
 
@@ -111,7 +111,7 @@ console.log('');
 // Performance comparison
 console.log('\n=== Performance Comparison ===\n');
 
-const { analyzePasswordStrength } = require('@ian-p1nt0/password-utils');
+const { analyzePasswordStrength } = require('password-utils');
 
 const testPassword = 'TestPassword123!';
 

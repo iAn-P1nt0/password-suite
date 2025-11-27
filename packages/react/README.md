@@ -1,9 +1,9 @@
-# @ian-p1nt0/password-utils-react
+# password-utils-react
 
-React hooks for [TrustVault Password Utils](https://github.com/iAn-P1nt0/TrustVault-password-utils).
+React hooks for [TrustVault Password Utils](https://github.com/iAn-P1nt0/password-utils).
 
-[![npm version](https://img.shields.io/npm/v/@ian-p1nt0/password-utils-react.svg)](https://www.npmjs.com/package/@ian-p1nt0/password-utils-react)
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/TrustVault-password-utils/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/password-utils-react.svg)](https://www.npmjs.com/package/password-utils-react)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/password-utils/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 
 ## Features
@@ -19,15 +19,15 @@ React hooks for [TrustVault Password Utils](https://github.com/iAn-P1nt0/TrustVa
 ## Installation
 
 ```bash
-npm install @ian-p1nt0/password-utils-react
+npm install password-utils-react
 ```
 
 ```bash
-yarn add @ian-p1nt0/password-utils-react
+yarn add password-utils-react
 ```
 
 ```bash
-pnpm add @ian-p1nt0/password-utils-react
+pnpm add password-utils-react
 ```
 
 ## Quick Start
@@ -35,7 +35,7 @@ pnpm add @ian-p1nt0/password-utils-react
 ### Password Generation
 
 ```tsx
-import { usePasswordGenerator } from '@ian-p1nt0/password-utils-react';
+import { usePasswordGenerator } from 'password-utils-react';
 
 function PasswordForm() {
   const { password, generate, loading, clear } = usePasswordGenerator({
@@ -66,7 +66,7 @@ function PasswordForm() {
 
 ```tsx
 import { useState } from 'react';
-import { usePasswordStrength } from '@ian-p1nt0/password-utils-react';
+import { usePasswordStrength } from 'password-utils-react';
 
 function PasswordInput() {
   const [password, setPassword] = useState('');
@@ -133,7 +133,7 @@ function StrengthMeter({ score }: { score: number }) {
 ### Passphrase Generation
 
 ```tsx
-import { usePassphraseGenerator } from '@ian-p1nt0/password-utils-react';
+import { usePassphraseGenerator } from 'password-utils-react';
 
 function PassphraseForm() {
   const { passphrase, generate, loading } = usePassphraseGenerator({
@@ -159,7 +159,7 @@ function PassphraseForm() {
 
 ```tsx
 import { useState } from 'react';
-import { useBreachCheck } from '@ian-p1nt0/password-utils-react';
+import { useBreachCheck } from 'password-utils-react';
 
 function SignupForm() {
   const [password, setPassword] = useState('');
@@ -300,7 +300,7 @@ import {
   usePasswordGenerator,
   usePasswordStrength,
   useBreachCheck
-} from '@ian-p1nt0/password-utils-react';
+} from 'password-utils-react';
 
 function CompletePasswordForm() {
   const [password, setPassword] = useState('');
@@ -354,7 +354,7 @@ function CompletePasswordForm() {
 
 ```tsx
 import { useEffect } from 'react';
-import { preloadZxcvbn } from '@ian-p1nt0/password-utils';
+import { preloadZxcvbn } from 'password-utils';
 
 function App() {
   // Preload zxcvbn on app mount
@@ -380,7 +380,7 @@ import type {
   PassphraseOptions,
   PasswordStrengthResult,
   BreachResult
-} from '@ian-p1nt0/password-utils-react';
+} from 'password-utils-react';
 ```
 
 ## Performance Tips
@@ -402,15 +402,15 @@ Apache-2.0
 
 ## Related Packages
 
-- [@ian-p1nt0/password-utils](https://www.npmjs.com/package/@ian-p1nt0/password-utils) - Core library
-- [@ian-p1nt0/password-utils-vue](https://www.npmjs.com/package/@ian-p1nt0/password-utils-vue) - Vue 3 composables
+- [password-utils](https://www.npmjs.com/package/password-utils) - Core library
+- [password-utils-vue](https://www.npmjs.com/package/password-utils-vue) - Vue 3 composables
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/iAn-P1nt0/TrustVault-password-utils/blob/main/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://github.com/iAn-P1nt0/password-utils/blob/main/CONTRIBUTING.md)
 
 ## Support
 
-- 📖 [Documentation](https://github.com/iAn-P1nt0/TrustVault-password-utils)
-- 🐛 [Issue Tracker](https://github.com/iAn-P1nt0/TrustVault-password-utils/issues)
-- 💬 [Discussions](https://github.com/iAn-P1nt0/TrustVault-password-utils/discussions)
+- 📖 [Documentation](https://github.com/iAn-P1nt0/password-utils)
+- 🐛 [Issue Tracker](https://github.com/iAn-P1nt0/password-utils/issues)
+- 💬 [Discussions](https://github.com/iAn-P1nt0/password-utils/discussions)

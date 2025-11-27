@@ -8,12 +8,12 @@ Successfully built all TrustVault Password Utils packages and created comprehens
 
 ### ✅ All Packages Built Successfully
 
-1. **Main Package** (@ian-p1nt0/password-utils) - Core library
+1. **Main Package** (password-utils) - Core library
    - Status: ✅ Built successfully
    - Output: `dist/` with CJS, ESM, and TypeScript declarations
    - Size: ~60KB (CJS), ~56KB (ESM)
 
-2. **React Hooks Package** (@ian-p1nt0/password-utils-react)
+2. **React Hooks Package** (password-utils-react)
    - Status: ✅ Built successfully
    - Output: `packages/react/dist/` with CJS, ESM, and declarations
    - Size: ~7KB (CJS), ~6KB (ESM)

@@ -40,7 +40,7 @@ First paint:       ~35 KB ✅
 
 ### Phase 3.7: React Hooks Package ✅
 
-**Package**: `@ian-p1nt0/password-utils-react`  
+**Package**: `password-utils-react`  
 **Location**: `/packages/react/`
 
 #### Hooks Implemented:
@@ -70,7 +70,7 @@ First paint:       ~35 KB ✅
 
 #### API Example:
 ```tsx
-import { usePasswordGenerator, usePasswordStrength } from '@ian-p1nt0/password-utils-react';
+import { usePasswordGenerator, usePasswordStrength } from 'password-utils-react';
 
 function PasswordForm() {
   const [password, setPassword] = useState('');
@@ -341,9 +341,9 @@ tvpg generate --count 10 --quiet > passwords.txt
 ## Package Structure
 
 ```
-TrustVault-password-utils/
+password-utils/
 ├── packages/
-│   ├── react/                          # @ian-p1nt0/password-utils-react
+│   ├── react/                          # password-utils-react
 │   │   ├── src/
 │   │   │   ├── usePasswordGenerator.ts
 │   │   │   ├── usePasswordStrength.ts
@@ -381,12 +381,12 @@ TrustVault-password-utils/
 
 ## NPM Packages Ready for Publishing
 
-### 1. @ian-p1nt0/password-utils (existing - updated)
+### 1. password-utils (existing - updated)
 - Version: 1.0.1 → 1.1.0 (minor bump for new lazy-load feature)
 - Changes: Lazy-load zxcvbn implementation
 - Breaking: None
 
-### 2. @ian-p1nt0/password-utils-react (new)
+### 2. password-utils-react (new)
 - Version: 1.0.0
 - Dependencies: react >=16.8.0
 - Size: ~5 KB (excluding peer deps)
@@ -405,7 +405,7 @@ TrustVault-password-utils/
 
 ## Publishing Checklist
 
-### Core Package (@ian-p1nt0/password-utils)
+### Core Package (password-utils)
 - [ ] Bump version to 1.1.0
 - [ ] Update CHANGELOG.md
 - [ ] Update README.md
@@ -415,7 +415,7 @@ TrustVault-password-utils/
 - [ ] Publish: `npm publish`
 
 ### React Package
-- [ ] Link core package: `npm link @ian-p1nt0/password-utils`
+- [ ] Link core package: `npm link password-utils`
 - [ ] Run `npm run test`
 - [ ] Run `npm run build`
 - [ ] Test in React 16.8, 17, 18
@@ -528,5 +528,5 @@ All implementation requirements met:
 
 **Generated**: November 15, 2025  
 **Author**: GitHub Copilot (Claude Sonnet 4.5)  
-**Package**: @ian-p1nt0/password-utils  
+**Package**: password-utils  
 **Phases Completed**: 2.6, 3.7, 3.8, 3.9

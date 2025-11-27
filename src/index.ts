@@ -1,5 +1,5 @@
 /**
- * @ian-p1nt0/password-utils
+ * password-utils
  * 
  * Cryptographically secure password and passphrase generation utilities
  * with comprehensive strength analysis.

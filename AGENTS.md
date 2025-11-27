@@ -2,7 +2,7 @@
 ## Mandatory Enhancement Plan (always apply before new features)
 
 Every agent MUST follow the **prioritised roadmap below** when asked to
-enhance @ian-p1nt0/password-utils.  The sequence is security-impact-ranked
+enhance password-utils.  The sequence is security-impact-ranked
 and bundle-size-aware; do **not** deviate without explicit user approval.
 
 ### Phase-1  "Zero-Days & Re-use" (highest ROI)
@@ -316,9 +316,9 @@ and bundle-size-aware; do **not** deviate without explicit user approval.
 
 ### Phase-3  "DX & A11y"
 
-#### 7. **Framework hooks** (`@ian-p1nt0/password-utils-react|vue`)
+#### 7. **Framework hooks** (`password-utils-react|vue`)
 
-**React Implementation** (`@ian-p1nt0/password-utils-react`):
+**React Implementation** (`password-utils-react`):
 ```typescript
 // usePasswordGenerator.ts
 export function usePasswordGenerator(
@@ -378,7 +378,7 @@ export function usePasswordStrength(password: string) {
 }
 ```
 
-**Vue 3 Implementation** (`@ian-p1nt0/password-utils-vue`):
+**Vue 3 Implementation** (`password-utils-vue`):
 ```typescript
 // usePasswordGenerator.ts
 export function usePasswordGenerator(

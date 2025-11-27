@@ -39,15 +39,15 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iAn-P1nt0/TrustVault-password-utils.git",
+    "url": "git+https://github.com/iAn-P1nt0/password-utils.git",
     "directory": "packages/web-component"
   },
   "bugs": {
-    "url": "https://github.com/iAn-P1nt0/TrustVault-password-utils/issues"
+    "url": "https://github.com/iAn-P1nt0/password-utils/issues"
   },
-  "homepage": "https://github.com/iAn-P1nt0/TrustVault-password-utils#readme",
+  "homepage": "https://github.com/iAn-P1nt0/password-utils#readme",
   "dependencies": {
-    "@ian-p1nt0/password-utils": "file:../.."
+    "password-utils": "file:../.."
   },
   "devDependencies": {
     "@types/node": "^22.10.1",

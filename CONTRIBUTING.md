@@ -53,8 +53,8 @@ We are committed to providing a welcoming and inclusive environment for all cont
 1. **Fork the repository**
    ```bash
    # Click "Fork" on GitHub, then clone your fork
-   git clone https://github.com/YOUR_USERNAME/TrustVault-password-utils.git
-   cd TrustVault-password-utils
+   git clone https://github.com/YOUR_USERNAME/password-utils.git
+   cd password-utils
    ```
 
 2. **Install dependencies**
