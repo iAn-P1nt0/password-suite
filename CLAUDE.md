@@ -6,7 +6,7 @@
 
 **Package Information:**
 - **Name:** password-utils
-- **Version:** 1.0.1
+- **Version:** 2.0.0
 - **License:** Apache-2.0
 - **Node:** >=20.0.0
 - **Bundle Formats:** CommonJS + ESM

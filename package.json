@@ -1,6 +1,6 @@
 {
   "name": "password-utils",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Cryptographically secure password and passphrase generation utilities with strength analysis",
   "type": "module",
   "private": false,

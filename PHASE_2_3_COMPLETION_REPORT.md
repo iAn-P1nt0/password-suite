@@ -382,7 +382,7 @@ password-utils/
 ## NPM Packages Ready for Publishing
 
 ### 1. password-utils (existing - updated)
-- Version: 1.0.1 → 1.1.0 (minor bump for new lazy-load feature)
+- Version: 2.0.0 → 1.1.0 (minor bump for new lazy-load feature)
 - Changes: Lazy-load zxcvbn implementation
 - Breaking: None
 
